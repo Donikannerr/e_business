@@ -1,3 +1,5 @@
+import 'package:e_business/pages/app_baar/menu_dynamically.dart';
+import 'package:e_business/pages/app_baar/title_dynamically.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -10,22 +12,8 @@ class Home extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(Icons.menu),
-              Text.rich(
-                TextSpan(
-                  style: TextStyle(
-                    fontSize: 17,
-                  ),
-                  children: [
-                    WidgetSpan(
-                      child: Icon(Icons.public),
-                    ),
-                    TextSpan(
-                      text: 'ffline - Your dopamin detox',
-                    )
-                  ],
-                ),
-              ),
+              MenuDynamically(),
+              TitleDynamically(),
               Icon(Icons.share)
             ],
           ),
