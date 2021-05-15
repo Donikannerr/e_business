@@ -9,13 +9,16 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(179, 163, 203, 1),
         title: Container(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              MenuDynamically(),
-              TitleDynamically(),
-              Icon(Icons.share)
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(1.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                MenuDynamically(),
+                TitleDynamically(),
+                Icon(Icons.share)
+              ],
+            ),
           ),
         ),
       ),
